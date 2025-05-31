@@ -16,7 +16,7 @@ overlay.style.cssText = `
 
 const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
-svgImage.src = 'https://cdn.jsdelivr.net/gh/jasminder/flutter_preloader/preload.svg';
+svgImage.src = 'https://cdn.jsdelivr.net/gh/stoumnova/test@9a6f8f60ff1fa883f01441b8915564b614f95863/5.svg';
 svgImage.style.cssText = `
     max-width: 100%;
     max-height: 100%;
