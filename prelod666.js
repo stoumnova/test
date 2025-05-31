@@ -24,6 +24,7 @@ svgImage.style.cssText = `
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: rgba(255, 255, 255, 1);
     transform: translate(-50%, -50%);
 `;
 svgImage.style.display = 'none';
@@ -31,6 +32,9 @@ svgImage.style.display = 'none';
 // Append the elements to the body
 document.body.appendChild(overlay);
 document.body.appendChild(svgImage);
+
+// Change the background color of the body to black
+document.body.style.backgroundColor = 'white';
 
 // Function to hide the overlay and display the SVG
 function hideOverlay() {
