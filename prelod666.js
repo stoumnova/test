@@ -18,14 +18,13 @@ const svgImage = document.createElement('img');
 svgImage.id = 'svgImage';
 svgImage.src = 'https://cdn.jsdelivr.net/gh/stoumnova/test@d0faf6eefb45029c9d92ff06b786c451f709ee95/5.svg';
 svgImage.style.cssText = `
-    max-width: 100%;
-    max-height: 100%;
+   max-width: 90%;  /* Задайте ширину меньше 100%, чтобы оставить отступы */
+    max-height: 90%; /* Задайте высоту меньше 100%, чтобы оставить отступы */
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(255, 255, 255, 1);
-    transform: translate(-50%, -50%);
+    position: relative; /* Изменено на relative для корректного позиционирования */
+    background-color: rgba(255, 255, 255, 1); /* Белый фон для изображения */
+    border-radius: 10px; /* Добавлено закругление углов для акцента */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для улучшения видимости */
 `;
 svgImage.style.display = 'none';
 
